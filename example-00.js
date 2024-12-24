@@ -13,7 +13,7 @@ set.forEach(element => {
 });
 
 /**
- * @description this is the implementation of a callbacko
+ * @description this is the implementation of a callback
  */
 
 function principal(callback){
