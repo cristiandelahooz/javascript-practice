@@ -1,8 +1,20 @@
 /**
- * @description this is my first real example.
+ * @description this is an example about objects and how to use a for in.
  */
 
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    
+let person = {
+  name: 'cristian',
+  lastName: 'de la hoz',
+  age: 19,
+  method: () => {
+      console.log('this is from the method')
+    }
 }
+
+for (const key in person) {
+    if (Object.prototype.hasOwnProperty.call(person, key)) {
+        const element = person[key];
+        console.log(key + ':' + element);
+    }
+}
+
