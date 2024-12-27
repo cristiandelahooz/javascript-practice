@@ -1,0 +1,25 @@
+{
+  "name": "javascript-practice",
+  "version": "1.0.0",
+  "description": "this is just a project to practice",
+  "main": "to-dockerize.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristiandelahooz/javascript-practice.git"
+  },
+  "author": "cristiandelahooz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cristiandelahooz/javascript-practice/issues"
+  },
+  "homepage": "https://github.com/cristiandelahooz/javascript-practice#readme",
+  "dependencies": {
+    "axios": "^1.7.9"
+  }
+}
