@@ -12,7 +12,12 @@ export class Person {
 			console.log('this is from the method');
 		};
 	}
-
+	/**
+	 * @param {any} bankAccount
+	 */
+	set bankAccount(bankAccount) {
+		this.#bankAccount = bankAccount;
+	}
 	insert(money) {
 		this.money += money;
 	}
