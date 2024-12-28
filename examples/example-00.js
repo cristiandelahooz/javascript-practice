@@ -16,7 +16,7 @@ set.forEach(element => {
  * @description this is the implementation of a callback
  */
 
-function principal(callback){
+export function principal(callback){
     let animal = {
         name: "Sheitan",
         age: 4,

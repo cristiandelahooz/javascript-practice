@@ -1,5 +1,6 @@
-class Person {
-
+console.time('execution time:')
+    
+export class Person {
     #bankAccount
     constructor(name, lastname, age, bankAccount) {
        this.name = name;
@@ -55,6 +56,7 @@ console.log(age);
  * @description spreading objects
  */
 
-anotherPerson = {...person, email: 'cristiandelahooz@gmail.com'}
+let anotherPerson = {...person, email: 'cristiandelahooz@gmail.com'}
 
-console.log(anotherPerson);
+console.table(anotherPerson);
+console.timeEnd('execution time:')
