@@ -18,13 +18,11 @@ class Dog extends Animal {
 	}
 }
 
-class MathOperations {
-	static sum(a, b) {
-		return a + b;
-	}
+const MathOperations = (a, b) => {
+	return a + b;
 }
 
-console.log(MathOperations.sum(5, 8));
+console.log(MathOperations(5, 8));
 
-let myDog = new Dog('Sheitan', 4);
+const myDog = new Dog('Sheitan', 4);
 myDog.song();

@@ -1,6 +1,6 @@
 import promptSync from 'prompt-sync';
 
-let myFirtVariable = 'Hello World';
+const myFirtVariable = 'Hello World';
 console.log(myFirtVariable);
 
 for (let i = 0; i < 5; i++) {

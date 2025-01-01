@@ -1,7 +1,7 @@
 import { principal } from './example-00.js';
 import { Person } from './example-01.js';
 
-let person = new Person('cristian', 'last', 28, 'jlajf40uq403q4j04r');
+const person = new Person('cristian', 'last', 28, 'jlajf40uq403q4j04r');
 console.table(person);
 // principal((animal) => {
 //     console.table(animal);

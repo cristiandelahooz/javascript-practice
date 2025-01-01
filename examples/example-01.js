@@ -32,7 +32,7 @@ export class Person {
 //     }
 // }
 
-let person = new Person('cristian', 'de la hoz', 19, 'r0q8fj0fj0q');
+const person = new Person('cristian', 'de la hoz', 19, 'r0q8fj0fj0q');
 person.insert(3500);
 /**
  * @description this is an example about objects and how to use a for in.
@@ -41,7 +41,7 @@ person.insert(3500);
 for (const key in person) {
 	if (Object.prototype.hasOwnProperty.call(person, key)) {
 		const element = person[key];
-		console.log(key + ':' + element);
+		console.log(`${key}:${element}`);
 	}
 }
 
@@ -51,14 +51,14 @@ for (const key in person) {
  * @description destructuring objects
  */
 
-let { name, age } = person;
+const { name, age } = person;
 console.log(age);
 
 /**
  * @description spreading objects
  */
 
-let anotherPerson = { ...person, email: 'cristiandelahooz@gmail.com' };
+const anotherPerson = { ...person, email: 'cristiandelahooz@gmail.com' };
 
 console.table(anotherPerson);
 console.timeEnd('execution time:');

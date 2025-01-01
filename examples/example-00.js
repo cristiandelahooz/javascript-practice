@@ -1,23 +1,23 @@
-let person = {
+const person = {
 	name: 'cristian',
 };
 
 // console.log(person.name)
-let set = new Set();
+const set = new Set();
 set.add(1);
 set.add({ name: 'cristian' });
 set.add(person);
 
-set.forEach((element) => {
+for (const element of set) {
 	console.log(element);
-});
+}
 
 /**
  * @description this is the implementation of a callback
  */
 
 export function principal(callback) {
-	let animal = {
+	const animal = {
 		name: 'Sheitan',
 		age: 4,
 		raza: 'Pitbull',
@@ -35,7 +35,7 @@ principal((element) => {
  */
 
 (() => {
-	let userName = 'cristian';
+	const userName = 'cristian';
 	console.log(userName);
 })();
 
