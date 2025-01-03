@@ -1,5 +1,5 @@
 const person = {
-	name: 'cristian',
+  name: 'cristian',
 };
 
 // console.log(person.name)
@@ -9,7 +9,7 @@ set.add({ name: 'cristian' });
 set.add(person);
 
 for (const element of set) {
-	console.log(element);
+  console.log(element);
 }
 
 /**
@@ -17,16 +17,16 @@ for (const element of set) {
  */
 
 export function principal(callback) {
-	const animal = {
-		name: 'Sheitan',
-		age: 4,
-		raza: 'Pitbull',
-	};
-	callback(animal);
+  const animal = {
+    name: 'Sheitan',
+    age: 4,
+    raza: 'Pitbull',
+  };
+  callback(animal);
 }
 
 principal((element) => {
-	console.log(element);
+  console.log(element);
 });
 
 /**
@@ -35,8 +35,8 @@ principal((element) => {
  */
 
 (() => {
-	const userName = 'cristian';
-	console.log(userName);
+  const userName = 'cristian';
+  console.log(userName);
 })();
 
 // let userName = "robert"

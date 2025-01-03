@@ -1,26 +1,26 @@
 console.time('execution time:');
 
 export class Person {
-	#bankAccount;
-	constructor(name, lastname, age, bankAccount) {
-		this.name = name;
-		this.lastname = lastname;
-		this.age = age;
-		this.#bankAccount = bankAccount;
-		this.money = 0;
-		this.method = () => {
-			console.log('this is from the method');
-		};
-	}
-	/**
-	 * @param {any} bankAccount
-	 */
-	set bankAccount(bankAccount) {
-		this.#bankAccount = bankAccount;
-	}
-	insert(money) {
-		this.money += money;
-	}
+  #bankAccount;
+  constructor(name, lastname, age, bankAccount) {
+    this.name = name;
+    this.lastname = lastname;
+    this.age = age;
+    this.#bankAccount = bankAccount;
+    this.money = 0;
+    this.method = () => {
+      console.log('this is from the method');
+    };
+  }
+  /**
+   * @param {any} bankAccount
+   */
+  set bankAccount(bankAccount) {
+    this.#bankAccount = bankAccount;
+  }
+  insert(money) {
+    this.money += money;
+  }
 }
 
 // let person = {
@@ -39,10 +39,10 @@ person.insert(3500);
  */
 
 for (const key in person) {
-	if (Object.prototype.hasOwnProperty.call(person, key)) {
-		const element = person[key];
-		console.log(`${key}:${element}`);
-	}
+  if (Object.prototype.hasOwnProperty.call(person, key)) {
+    const element = person[key];
+    console.log(`${key}:${element}`);
+  }
 }
 
 // person.method();
