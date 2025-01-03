@@ -2,16 +2,19 @@
   "name": "javascript-practice",
   "type": "module",
   "version": "1.0.0",
-  "description": "just for practice",
-  "main": "",
+  "description": "Just a bunch of practice",
+  "main": "index.js",
   "scripts": {
-    "test": ""
+    "format": "biome format --write ./src",
+    "lint": "biome check --write ./src",
+    "build": "webpack --config webpack.config.js",
+    "test": "jest"
   },
   "keywords": [],
-  "author": "Cristiandelahooz",
+  "author": "cristiandelahooz",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.7.9",
-    "images": "^3.2.4"
+    "serve": "^14.2.4"
   }
 }
