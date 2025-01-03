@@ -1,12 +1,12 @@
 {
   "lineWidth": 80,
   "json": {
-    "useTabs": true
+    "useTabs": false
   },
   "typescript": {
     "lineWidth": 80,
     "indentWidth": 2,
-    "useTabs": true,
+    "useTabs": false,
     "semiColons": "prefer",
     "quoteStyle": "preferSingle",
     "quoteProps": "preserve",
@@ -65,9 +65,15 @@
     "lineWidth": 80,
     "newLineKind": "lf"
   },
+  "yaml": {
+    "quotes": "preferSingle"
+  },
   "plugins": [
     "https://plugins.dprint.dev/typescript-0.88.7.wasm",
     "https://plugins.dprint.dev/json-0.19.1.wasm",
-    "https://plugins.dprint.dev/dockerfile-0.3.2.wasm"
-  ]
+    "https://plugins.dprint.dev/dockerfile-0.3.2.wasm",
+    "https://plugins.dprint.dev/markdown-0.17.8.wasm",
+    "https://plugins.dprint.dev/g-plane/pretty_yaml-v0.5.0.wasm"
+  ],
+  "excludes": ["pnpm-lock.yaml"]
 }

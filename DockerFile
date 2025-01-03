@@ -5,4 +5,4 @@ COPY pnpm*.yaml ./
 RUN npm install -g pnpm
 RUN pnpm install
 COPY . .
-CMD [ "node", "." ] 
+CMD ["node", "."]
