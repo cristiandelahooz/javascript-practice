@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+
 /**
  * @param {String} s
  * @returns {number}
