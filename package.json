@@ -5,8 +5,8 @@
   "description": "Just a bunch of practice",
   "main": "index.js",
   "scripts": {
-    "format": "biome format --write ./src",
-    "lint": "biome check --write ./src",
+    "format": "biome format --write",
+    "lint": "biome check --write",
     "build": "webpack --config webpack.config.js",
     "test": "jest"
   },
