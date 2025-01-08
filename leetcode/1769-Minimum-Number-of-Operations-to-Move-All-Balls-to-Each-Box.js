@@ -17,6 +17,6 @@ const minOperations = (boxes) => {
 minOperations('110');
 
 const number = [1, 3, 4];
-number.add(1);
+number.push(1);
 
 console.log(number);
