@@ -1,8 +1,10 @@
-FROM node:22-alpine
-WORKDIR /app
-COPY package.json ./
-COPY pnpm*.yaml ./
-RUN npm install -g pnpm
-RUN pnpm install
+FROM node:lts-alpine
+ENV NODE_ENV=production
+WORKDIR /usr/src/app
+COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
+RUN npm install --production --silent && mv node_modules ../
 COPY . .
-CMD ["node", "."]
+EXPOSE 3000
+RUN chown -R node /usr/src/app
+USER node
+CMD ["node", "index.js"]
